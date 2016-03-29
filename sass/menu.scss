@@ -1,0 +1,118 @@
+
+body{
+  border-top: 5px solid #1A237E;
+}
+a{
+   color: #444; 
+}
+.body--wrapper{
+    max-width: $body-wrapper;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+.profile--pic{
+    width: $profile-size;
+    height: $profile-size;
+    background: url(../images/profile.jpg) no-repeat ;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+       
+    
+    &.animate{
+        width: $profile-size-animate;
+        height: $profile-size-animate;
+        top: 0px;
+         transform: rotateY(180deg);
+          transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -webkit-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+         -ms-transition-delay: 0.8s;
+         -webkit-transition-delay: 0.8s;
+         -o-transition-delay: 0.8s;
+         -moz-transition-delay: 0.8s;
+         transition-delay: 0.8s;
+        
+    }
+}
+
+.profile--name{
+     font-size: 3em;
+    margin: 1.4rem 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #1A237E;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.profile--name.visible{
+     -ms-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -webkit-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+         -ms-transition-delay: 1s;
+         -webkit-transition-delay: 1s;
+         -o-transition-delay: 1s;
+         -moz-transition-delay: 1s;
+         transition-delay: 1s;
+         
+         visibility: visible;
+         opacity: 1;
+
+}
+
+.text--align--center{
+    text-align: center;
+}
+.profile--caption{
+        font-size: 1.4em;
+    font-family: 'Lato', serif;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    color: #777;
+    font-weight: 300;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+    &.visible{
+        transform: none;
+        opacity: 1;
+         visibility: visible;
+         -ms-transition: all 320ms ease-out;
+        -moz-transition: all 320ms ease-out;
+        -webkit-transition: all 320ms ease-out;
+        -o-transition: all 320ms ease-out;
+         -ms-transition-delay: 1.2s;
+         -webkit-transition-delay: 1.2s;
+         -o-transition-delay: 1.2s;
+         -moz-transition-delay: 1.2s;
+         transition-delay: 1.2s;
+    }
+}
+
+.icons--social{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    &.twitter{
+        width: 50px;
+        height: 50px;
+    }
+     &.instagram{
+        
+    }
+    &.mail{
+        width: 50px;
+        height: 50px;
+        
+        
+    }
+}
